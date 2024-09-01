@@ -1,0 +1,13 @@
+.r-d-flex{
+    display: flex;
+    display: -webkit-flex;
+}
+
+.r-button{
+    border: none;
+    cursor: pointer;
+}
+
+.r-radius{
+    border-radius: 5px;
+}
