@@ -13,15 +13,15 @@
     <img src="public/svg/logo-bookmark.svg" class="logo-bookmark" alt="logo-bookmark"/>
     
     <!-- Navegación -->
-    <nav class="nav">
+    <nav class="nav r-d-flex">
       <div class="svg-mobile">
         <img src="public/svg/logo-bookmark-light.svg" class="logo-bookmark" alt="logo-bookmark"/>
         <img src="public/svg/icon-close.svg" class="icon-close" alt="icon-close" id="close-menu"/> 
       </div>
 
-      <a href="#" class="r-radius">Features</a>
-      <a href="#" class="r-radius">Pricing</a>
-      <a href="#" class="r-radius">Contact</a>
+      <a href="#" class="r-radius r-text-color">Features</a>
+      <a href="#" class="r-radius r-text-color">Pricing</a>
+      <a href="#" class="r-radius r-text-color">Contact</a>
 
       <button type="button" class="r-button r-radius">Login</button>
 
@@ -33,6 +33,30 @@
 
     <img src="public/svg/icon-hamburger.svg" class="icon-hamburger" alt="icon-hamburger" id="open-menu"/> 
   </header>
+
+  <!-- Principal -->
+  <main class="main">
+    <section class="hero r-d-flex">
+      <div class="hero-text r-d-grid">
+        <h1>A Simple Bookmark Manager</h1>
+
+        <p class="r-text-color">
+          A clean and simple interface to organize your favourite
+          websites. Open a new browser tab and see your sites load
+          instanly. Try it for free.
+        </p>
+        
+        <div class="buttons r-d-flex">
+          <button class="r-button r-radius">Get in on Chrome</button>
+          <button class="r-button r-radius">Get in on Firefox</button>
+        </div>
+      </div>
+
+      <figure class="illustration-hero">
+        <img src="public/svg/illustration-hero.svg" alt="illustration-hero">
+      </figure>
+    </section>
+  </main>
 
   <script src="/js/open_close_menu_mobile.js"></script>
 </body>

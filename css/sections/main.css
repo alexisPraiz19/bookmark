@@ -1,0 +1,14 @@
+.main{
+    margin-top: 50px;
+}
+
+
+/* Responsive: Tablet */
+@media screen and (width <= 800px){
+    .main{ margin-top: 0; }
+}
+
+/* Responsive: Mobile */
+@media screen and (width <= 500px){
+    .main{ margin-top: 40px; }
+}

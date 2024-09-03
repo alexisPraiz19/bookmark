@@ -3,6 +3,12 @@
     display: -webkit-flex;
 }
 
+.r-d-grid{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
 .r-button{
     border: none;
     cursor: pointer;
@@ -11,3 +17,5 @@
 .r-radius{
     border-radius: 5px;
 }
+
+.r-text-color{ color: var(--Grayish-Blue); }
