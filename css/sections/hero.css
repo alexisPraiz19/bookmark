@@ -7,10 +7,7 @@
         max-width: 420px; height: max-content;
         margin-top: 40px;
 
-        h1{
-          font-size: 2em;
-          font-weight: 500;
-        }
+        h1{ font-size: 2em; }
 
         p{
            font-size: .9em;
@@ -23,18 +20,7 @@
             button{
                 padding: 10px 20px;
                 font-weight: 600;
-                color: #fff;
                 &:active{ transform: translateY(1px) }
-
-                &:first-child{
-                   background-color: var(--Soft-Blue);
-
-                    &:hover{
-                       color: var(--Soft-Blue);
-                       background-color: #fff;
-                       outline: 1.5px solid var(--Soft-Blue);
-                    }
-                }
 
                 &:last-child{
                     color: #000;
@@ -53,6 +39,7 @@
     .illustration-hero{
         position: relative;
         width: 50%;
+        
         &::after{
             content: "";
             position: absolute;
@@ -80,13 +67,14 @@
 }
 
 /* Responsive: Tablet */
-@media screen and (width <= 800px){
+@media screen and (width <= 900px){
     .main .hero{
         flex-direction: column-reverse;
         align-items: center;
-        padding: 0 4% 0 4%;
+        padding-inline: 4%;
 
         .hero-text{ 
+            margin-top: 10px;
             text-align: center;
             .buttons{ justify-content: center }
         }
@@ -96,8 +84,8 @@
 
             &::after{
                 right: calc(-4% - 2px);
-                height: 60%;
-                bottom: 30px;
+                height: 59%;
+                bottom: 50px;
             }
                 
             img{ transform: scale(.8); }
@@ -108,24 +96,26 @@
 /* Responsive: Mobile */
 @media screen and (width <= 500px){
     .main .hero{
-        .hero-text p{ text-wrap: balance }
+        .hero-text{
+            margin-top: 40px;
+            p{ text-wrap: balance }
+        }
 
         .illustration-hero{
             &::after{
                 right: calc(-4% - 4px);
-                bottom: -16px;
+                bottom: -5px;
                 width: 93%; height: 78%;
             }
             
-            img{ transform: scale(1.1); }
+            img{ transform: scale(1.1) }
         }
     }
 }
 
 @media screen and (width <= 340px){
     .main .hero .hero-text{
-        h1{ font-size: 1.4em; }
-        p{ font-size: .8em; }
-        .buttons button{ padding: 10px 15px; }
+        h1{ font-size: 1.6em }
+        .buttons button{ padding: 10px 15px }
     }
 }

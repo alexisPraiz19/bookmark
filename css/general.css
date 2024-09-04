@@ -35,9 +35,16 @@ body{
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     overflow-x: hidden;
+
+    h1, h2{ font-weight: 500; }
 }
 
 /* Responsive: LapTop (1024px) */
 @media screen and (width <= 1024px){
     body{ font-size: 17px; }
+}
+
+/* Responsive: Mobile 340px */
+@media screen and (width <= 340px){
+    body{ font-size: 15.5px; }
 }

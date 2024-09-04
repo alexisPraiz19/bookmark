@@ -10,8 +10,20 @@
 }
 
 .r-button{
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--Soft-Blue);
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    &:active{ transform: translateY(1px) }
+    
+    &:hover{
+        color: var(--Soft-Blue);
+        background-color: #fff;
+        outline: 1.5px solid var(--Soft-Blue);
+    }
 }
 
 .r-radius{

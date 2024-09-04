@@ -10,13 +10,13 @@
 <body>
   <!-- Cabezera -->
   <header class="header r-d-flex">
-    <img src="public/svg/logo-bookmark.svg" class="logo-bookmark" alt="logo-bookmark"/>
+    <img src="public/svg/logo-bookmark.svg" class="logo-bookmark" alt="logo-bookmark">
     
     <!-- Navegación -->
     <nav class="nav r-d-flex">
       <div class="svg-mobile">
-        <img src="public/svg/logo-bookmark-light.svg" class="logo-bookmark" alt="logo-bookmark"/>
-        <img src="public/svg/icon-close.svg" class="icon-close" alt="icon-close" id="close-menu"/> 
+        <img src="public/svg/logo-bookmark-light.svg" class="logo-bookmark" alt="logo-bookmark">
+        <img src="public/svg/icon-close.svg" class="icon-close" alt="icon-close" id="close-menu"> 
       </div>
 
       <a href="#" class="r-radius r-text-color">Features</a>
@@ -26,16 +26,17 @@
       <button type="button" class="r-button r-radius">Login</button>
 
       <div class="svg-mobile">
-        <img src="public/svg/icon-facebook.svg" class="icon-facebook" alt="icon-facebook"/>
-        <img src="public/svg/icon-twitter.svg" class="icon-twitter" alt="icon-twitter"/> 
+        <img src="public/svg/icon-facebook.svg" class="icon-facebook" alt="icon-facebook">
+        <img src="public/svg/icon-twitter.svg" class="icon-twitter" alt="icon-twitter"> 
       </div>
     </nav>
 
-    <img src="public/svg/icon-hamburger.svg" class="icon-hamburger" alt="icon-hamburger" id="open-menu"/> 
+    <img src="public/svg/icon-hamburger.svg" class="icon-hamburger" alt="icon-hamburger" id="open-menu"> 
   </header>
 
   <!-- Principal -->
   <main class="main">
+    <!-- Hero -->
     <section class="hero r-d-flex">
       <div class="hero-text r-d-grid">
         <h1>A Simple Bookmark Manager</h1>
@@ -47,14 +48,55 @@
         </p>
         
         <div class="buttons r-d-flex">
-          <button class="r-button r-radius">Get in on Chrome</button>
-          <button class="r-button r-radius">Get in on Firefox</button>
+          <button class="r-button">Get in on Chrome</button>
+          <button class="r-button">Get in on Firefox</button>
         </div>
       </div>
 
       <figure class="illustration-hero">
         <img src="public/svg/illustration-hero.svg" alt="illustration-hero">
       </figure>
+    </section>
+
+    <!-- Features -->
+    <section class="features r-d-grid">
+      <div class="features-text" role="textbox">
+        <h1>Features</h1>
+
+        <p class="r-text-color">
+          Our aim is to make it quick and easy for you to access your
+          favourite websites. You bookmarks sync between your devices
+          so you can access them on the go.
+        </p>
+      </div>
+
+      <div class="detail">
+        <div class="slider r-d-flex r-text-color" role="navigation">
+          <span class="slide">Simple Bookmarking</span>
+          <span class="slide">Speedy Searching</span>
+          <span class="slide">Easy Sharing</span>
+        </div>
+
+        <div class="feature-tab" role="tablist">
+          <article class="feature r-d-grid">
+            <figure class="illustration-feature">
+              <img src="public/svg/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+            </figure>
+
+            <div class="feature-text">
+              <h2>Bookmark in one Click</h2>
+
+              <p class="r-text-color">
+                Organize your Bookmarks however you like. Our
+                simple drag-and-drop interface gives you complete
+                control over how you manage your favourite sites.
+              </p>
+
+              <button class="r-button">More Info</button>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 
