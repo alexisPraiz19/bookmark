@@ -1,0 +1,96 @@
+.download{
+    place-content: center;
+    justify-items: center;
+    margin-top: 180px;
+
+    .header_download{
+        width: 500px;
+        text-align: center;
+
+        h1{ 
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        p{ 
+            font-size: .9em;
+            line-height: 1.4;
+        }
+    }
+
+    .cards{
+        gap: 30px;
+        margin-top: 50px;
+
+        .card{
+            flex-direction: column;
+            width: 220px; height: max-content;
+            padding: 10px 0 24px 0;
+            box-shadow: 0 2px 6px #0002;
+
+            &:nth-child(2){ margin-top: 30px }
+            &:nth-child(3){ margin-top: 60px }
+
+            .top{
+                display: inherit;
+                flex-direction: column;
+                align-items: center;
+
+                img{ transform: scale(.78) }
+
+                em{
+                    margin-top: 15px;
+                    font-size: 1em;
+                    font-weight: 500;
+                    font-style: normal;
+                }
+
+                span{
+                    margin-top: 5px;
+                    font-size: .76em;
+                }
+            }
+
+            .bg-dots{
+                width: 100%;
+                height: 4px;
+                margin: 20px 0 18px 0;
+                background-image: url("/public/svg/bg-dots.svg");
+                background-position: center;
+            }
+
+            button{
+               align-self: center;
+               padding: 12px 20px;
+               font-size: .68em;
+               letter-spacing: .5px;
+            }
+        }
+    }
+}
+
+/* Responsive: Tablets 800px */
+@media screen and (width <= 800px){
+    .download .cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 99%;
+
+        .card{
+            &:nth-child(2){ margin-top: 0 }
+            &:nth-child(3){ margin-top: 0 }
+        }
+    }
+}
+
+/* Responsive: Mobile */
+@media screen and (width <= 500px){
+    .download{
+        margin-top: 100px;
+        padding-inline: 8%;
+
+        .header_download{ width: 100% }
+
+        .cards .card{ width: 90% }
+    } 
+}
