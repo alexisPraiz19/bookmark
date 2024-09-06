@@ -39,12 +39,12 @@ body{
     h1, h2{ font-weight: 500; }
 }
 
-/* Responsive: LapTop (1024px) */
+/* Responsive: LapTop 1024px */
 @media screen and (width <= 1024px){
     body{ font-size: 17px; }
 }
 
-/* Responsive: LapTop (500px) */
+/* Responsive: Mobile 500px */
 @media screen and (width <= 500px){
     body{ font-size: 16.5px; }
 }

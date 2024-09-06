@@ -1,5 +1,5 @@
 .r-d-flex{
-    /* display: flex; */
+    display: flex;
     display: -webkit-flex;
 }
 
@@ -30,4 +30,8 @@
     border-radius: 5px;
 }
 
-.r-text-color{ color: var(--Grayish-Blue); }
+.r-text-color{ 
+    font-size: .9em;
+    color: var(--Grayish-Blue); 
+    line-height: 1.4;
+}

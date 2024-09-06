@@ -7,9 +7,9 @@
         width: 500px;
         text-align: center;
 
-        h1{ 
+        h1{
             margin-bottom: 20px;
-            font-size: 1.55em;
+            font-size: 1.7em;
         }
     }
 
@@ -87,7 +87,6 @@
         padding-inline: 8%;
 
         .header_download{ width: 100% }
-
         .cards .card{ width: 90% }
     } 
 }

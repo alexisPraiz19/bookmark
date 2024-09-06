@@ -66,8 +66,7 @@
         align-items: center;
         padding-inline: 4%;
 
-        .header_hero{ 
-            width: 100%;
+        .header_hero{
             margin-top: 10px;
             text-align: center;
             transform: scale(1);
@@ -91,8 +90,9 @@
 @media screen and (width <= 500px){
     .hero{
         .header_hero{
+            width: 100%;
             margin-top: 40px;
-            p{ text-wrap: balance }
+            p{text-wrap: balance;}
         }
 
         .illustration-hero{
