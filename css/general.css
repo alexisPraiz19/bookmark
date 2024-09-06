@@ -44,6 +44,12 @@ body{
     body{ font-size: 17px; }
 }
 
+/* Responsive: LapTop (500px) */
+@media screen and (width <= 500px){
+    body{ font-size: 16.5px; }
+}
+
+
 /* Responsive: Mobile 340px */
 @media screen and (width <= 340px){
     body{ font-size: 15.5px; }

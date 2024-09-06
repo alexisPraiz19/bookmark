@@ -1,39 +1,28 @@
-.main .hero{
+.hero{
     justify-content: space-between;
     padding: 0 4% 0 12%;
 
-    .hero-text{
-        gap: 30px;
-        max-width: 420px; height: max-content;
+    .header_hero{
+        width: 420px;
         margin-top: 40px;
 
-        h1{ font-size: 2em; }
+        p{ padding-block: 30px }
 
-        p{
-           font-size: .9em;
-           line-height: 1.4;
-        }
+        .buttons button{
+            &:active{ transform: translateY(1px) }
+            &:first-child{ margin-right: 10px }
 
-        .buttons{
-            gap: 10px;
+            &:last-child{
+                color: #000;
+                background-color: #fff;
+                box-shadow: 0 2px 2px #0002;
 
-            button{
-                padding: 10px 20px;
-                font-weight: 600;
-                &:active{ transform: translateY(1px) }
-
-                &:last-child{
-                    color: #000;
-                    background-color: #fff;
-                    box-shadow: 0 2px 2px #0002;
-
-                    &:hover{
-                       color: var(--Grayish-Blue);
-                       outline: 1.5px solid #0002;
-                    }
+                &:hover{
+                   color: var(--Grayish-Blue);
+                   outline: 1.5px solid #0002;
                 }
             }
-        } 
+        }
     }
 
     .illustration-hero{
@@ -47,8 +36,7 @@
             bottom: -10px;
             width: 80%; height: calc(70% + 10px);
             background-color: var(--Soft-Blue);
-            border-top-left-radius: 200px;
-            border-bottom-left-radius: 200px;
+            border-radius: 200px 0 0 200px;
             z-index: -1;
         }
 
@@ -61,22 +49,28 @@
 
 /* Responsive: LapTop */
 @media screen and (width <= 1024px){
-    .main .hero{
-        padding: 0 4% 0 8%;
+    .hero{ 
+        padding-left: 8%;
+
+        .header_hero{ 
+            margin-top: 20px; 
+            transform: scale(.96);
+        }
     }
 }
 
 /* Responsive: Tablet */
 @media screen and (width <= 900px){
-    .main .hero{
+    .hero{
         flex-direction: column-reverse;
         align-items: center;
         padding-inline: 4%;
 
-        .hero-text{ 
+        .header_hero{ 
+            width: 100%;
             margin-top: 10px;
             text-align: center;
-            .buttons{ justify-content: center }
+            transform: scale(1);
         }
 
         .illustration-hero{
@@ -88,15 +82,15 @@
                 bottom: 50px;
             }
                 
-            img{ transform: scale(.8); }
+            img{ transform: scale(.9) }
         }
     }
 }
 
 /* Responsive: Mobile */
 @media screen and (width <= 500px){
-    .main .hero{
-        .hero-text{
+    .hero{
+        .header_hero{
             margin-top: 40px;
             p{ text-wrap: balance }
         }
@@ -114,8 +108,20 @@
 }
 
 @media screen and (width <= 340px){
-    .main .hero .hero-text{
+    .main .hero .header_hero{
         h1{ font-size: 1.6em }
-        .buttons button{ padding: 10px 15px }
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            button{ 
+                width: 100%;
+                padding: 10px 0 10px 0;
+                &:first-child{ margin: 0 }
+            }
+        }
     }
 }

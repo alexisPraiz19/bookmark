@@ -1,16 +1,14 @@
 .features{
     margin-top: 100px;
     
-    .features-text{
+    .header_features{
         width: 560px;
         margin: auto;
-        font-size: .9em;
         text-align: center;
         line-height: 1.4;
 
         h1{
             margin-bottom: 20px;
-            font-size: 2.1em; 
             letter-spacing: 1px;
         }
     }
@@ -95,11 +93,6 @@
     }
 }
 
-/* Responsive: Desktop 1440px */
-@media screen and (width >= 1440px){
-.features .detail .feature-tab .feature .illustration-feature{ transform: scale(1); }
-}
-
 /* Responsive: LapTop 1024px */
 @media screen and (width <= 1024px){
     .features .detail{
@@ -149,9 +142,7 @@
         margin-top: 140px;
         padding-inline: 8%;
 
-        .features-text{
-            width: 100%;
-        }
+        .header_features{ width: 100% }
 
         .detail{
             margin-top: 40px;
@@ -186,4 +177,4 @@
 }
 
 /* Responsive: Mobile 340px */
-@media screen and (width <= 340px){ .features{ margin-top: 100px; } }
+@media screen and (width <= 340px){ .features{ margin-top: 100px } }
