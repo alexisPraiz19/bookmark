@@ -21,7 +21,7 @@
 
   /* Neutral */
   --Grayish-Blue: hsl(229, 8%, 60%);  
-  --Very-Dark-Blue: hsla(229, 31%, 21%, 0.902);
+  --Very-Dark-Blue: hsl(229, 31%, 21%);
   --Grayish-Blue-Transparent: hsla(229, 8%, 60%, .3);
 }
 
@@ -40,17 +40,8 @@ body{
 }
 
 /* Responsive: LapTop 1024px */
-@media screen and (width <= 1024px){
-    body{ font-size: 17px; }
-}
-
+@media screen and (width <= 1024px){body{ font-size: 17px }}
 /* Responsive: Mobile 500px */
-@media screen and (width <= 500px){
-    body{ font-size: 16.5px; }
-}
-
-
+@media screen and (width <= 500px){body{ font-size: 16.5px }}
 /* Responsive: Mobile 340px */
-@media screen and (width <= 340px){
-    body{ font-size: 15.5px; }
-}
+@media screen and (width <= 340px){body{ font-size: 15.5px }}

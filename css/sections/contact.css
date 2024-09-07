@@ -82,10 +82,11 @@
 @media screen and (width <= 500px) {
     .contact{
         padding-inline: 8%;
-        .container-send-email{ width: 100% }
+        
+        .container-send-email{
+            width: 100%;
+            flex-direction: column;
+        }
         .show-error ~ button{ margin-top: 10px; }
     }
 }
-
-/* Responsive: Mobile 340px */
-@media screen and (width <= 340px) {.contact .container-send-email{ flex-direction: column }}

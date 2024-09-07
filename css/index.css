@@ -4,6 +4,7 @@
 /* Componentes */
 @import "semantics/header.css";
 @import "semantics/main.css";
+@import "semantics/footer.css";
 
 @import "sections/hero.css";
 @import "sections/features.css";

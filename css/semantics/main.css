@@ -1,16 +1,11 @@
 .main{
     margin-top: 50px;
-
     .header_hero h1, .header_features h1{ font-size: 1.9em }
 }
 
 
 /* Responsive: Tablet */
-@media screen and (width <= 900px){
-    .main{ margin-top: 0 }
-}
+@media screen and (width <= 900px){.main{ margin-top: 0 }}
 
 /* Responsive: Mobile */
-@media screen and (width <= 500px){
-    .main{ margin-top: 40px }
-}
+@media screen and (width <= 500px){ .main{margin-top: 40px }}
