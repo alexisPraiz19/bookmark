@@ -1,8 +1,6 @@
 .header{
     /* Contenedor Principal */
-    position: relative;
     height: 80px;
-    padding-inline: 12%;
     justify-content: space-between;
     align-items: center;
     
@@ -12,12 +10,11 @@
         z-index: 90;
         
         a, button{
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
+            align-content: center;
             width: 90px; height: 36px;
             font-size: .7em;
             font-weight: 500;
+            text-align: center;
             text-transform: uppercase;
             transition: all .1s linear;
         }
@@ -34,28 +31,22 @@
         button{
             color: #fff;
             background-color: var(--Soft-Red);
-            outline: none;
-
+            
             &:hover{
                 color: var(--Soft-Red);
                 background-color: #fff;
                 border: 1px solid var(--Soft-Red);
+                outline: none;
             }
         }
-
-        .svg-mobile{ display: none }
     } 
-
-    .icon-hamburger{ display: none }
+    .icon-hamburger, .svg-mobile{ display: none }
 }
-
-/* Responsive: LapTop */
-@media screen and (width <= 1024px){ .header{ padding-inline: 8%; } }
 
 /* Responsive: Mobile */
 @media screen and (width <= 500px){
     .header{ 
-        padding-inline: 5%; 
+        position: relative;
 
         /* Navegación */
         .nav{
@@ -64,7 +55,7 @@
             flex-direction: column;
             align-items: center;
             gap: 0;
-            background-color: var(--Very-Dark-Blue);
+            background-color: var(--Very-Dark-Blue-Light);
             transform: translateY(-100%);
             transition: transform .2s linear;
             
@@ -72,12 +63,12 @@
                 display: inline-flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 90%;
+                width: 88%;
                 margin: 28px 0 40px 0;
             }
                        
             a, button{
-                width: 90%; height: 56px;
+                width: 88%; height: 56px;
                 font-weight: 400;
                 color: #fff;
                 letter-spacing: 1.1px;
@@ -90,6 +81,7 @@
             button{
                 height: 40px;
                 margin-top: 20px;
+                padding: 0;
                 background-color: transparent;
                 border: 1.6px solid #fff;
                 border-radius: 5px;
@@ -99,11 +91,11 @@
                 position: absolute;
                 bottom: 40px;
                 justify-content: center;
-                margin: 0;
                 gap: 36px;
+                margin: 0;
             }
         }
-        .open{ transform: translateY(0); }
-        .icon-hamburger{ display: block; }
+        .open{ transform: translateY(0) }
+        .icon-hamburger{ display: block }
     }
 }

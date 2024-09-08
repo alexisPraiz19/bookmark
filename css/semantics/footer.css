@@ -14,7 +14,7 @@
         a{
             color: #fff;
             text-decoration: none;
-            &:hover{ color: var(--Soft-Red); }
+            &:hover{ color: var(--Soft-Red) }
         }
     }
 

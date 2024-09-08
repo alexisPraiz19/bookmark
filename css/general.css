@@ -22,6 +22,7 @@
   /* Neutral */
   --Grayish-Blue: hsl(229, 8%, 60%);  
   --Very-Dark-Blue: hsl(229, 31%, 21%);
+  --Very-Dark-Blue-Light: hsla(229, 31%, 21%, .9);
   --Grayish-Blue-Transparent: hsla(229, 8%, 60%, .3);
 }
 
@@ -30,6 +31,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{ overflow-x: hidden }
 
 body{
     font-family: "Rubik", sans-serif;
