@@ -6,7 +6,7 @@
         width: 420px;
         margin-top: 40px;
 
-        p{ padding-block: 30px }
+        p{ margin-block: 30px }
 
         .buttons button{
             &:active{ transform: translateY(1px) }
@@ -27,14 +27,13 @@
 
     .illustration-hero{
         position: relative;
-        width: 50%;
+        width: 52%;
         
         &::after{
             content: "";
             position: absolute;
-            right: calc(-9% - 3px);
-            bottom: -10px;
-            width: 80%; height: calc(70% + 10px);
+            right: -9.1%; bottom: -8px;
+            width: 80%; height: 72%;
             background-color: var(--Soft-Blue);
             border-radius: 200px 0 0 200px;
             z-index: -1;
@@ -47,7 +46,7 @@
     }
 }
 
-/* Responsive: LapTop */
+/* Responsive: LapTop 1024px */
 @media screen and (width <= 1024px){
     .hero{ 
         padding-left: 8%;
@@ -59,7 +58,7 @@
     }
 }
 
-/* Responsive: Tablet */
+/* Responsive: Tablet 900px */
 @media screen and (width <= 900px){
     .hero{
         flex-direction: column-reverse;
@@ -73,32 +72,30 @@
         }
 
         .illustration-hero{
-            width: 100%; 
-
+            width: 100%;
             &::after{
-                right: calc(-4% - 2px);
-                height: 59%;
-                bottom: 50px;
+                right: -5%; bottom: 40px;
+                height: 60%;
             }
-                
             img{ transform: scale(.9) }
         }
     }
 }
 
-/* Responsive: Mobile */
+/* Responsive: Mobile 500px */
 @media screen and (width <= 500px){
     .hero{
+        padding-inline: 6%;
+        
         .header_hero{
             width: 100%;
             margin-top: 40px;
-            p{text-wrap: balance;}
+            p{ text-wrap: balance }
         }
 
         .illustration-hero{
             &::after{
-                right: calc(-4% - 4px);
-                bottom: -5px;
+                right: -7%; bottom: -5px;
                 width: 93%; height: 78%;
             }
             

@@ -2,8 +2,8 @@
     margin-top: 100px;
     
     .header_features{
+        justify-self: center;
         width: 560px;
-        margin: auto;
         text-align: center;
         line-height: 1.4;
         
@@ -13,7 +13,8 @@
         }
     }
 
-    .detail{
+    /* Features Tab */ 
+    .features-tab{
         margin-top: 60px;
 
         .slider{
@@ -22,9 +23,8 @@
             
             .slide{
                 position: relative;
-                flex: 1;
                 align-content: center;
-                height: 50px;
+                flex: 1; height: 50px;
                 font-size: .82em;
                 font-weight: 500;
                 text-align: center;
@@ -34,8 +34,7 @@
                 &::after{
                     content: "";
                     position: absolute;
-                    left: 50%;
-                    bottom: -1px;
+                    left: 50%; bottom: -1px;
                     width: 0; height: 2px;
                     background-color: var(--Soft-Red);
                     transform: translateX(-50%);
@@ -49,44 +48,33 @@
 
         .feature-tab{
             position: relative;
-            width: 100%;
             margin-top: 60px;
-            padding-inline: 12%;
 
             .feature{
-                grid-template-columns: 1fr 1fr;
+                justify-content: space-between;
                 align-items: center;
 
                 .illustration-feature{
                     position: relative;
-                    width: 100%;
+                    width: 50%;
 
                     &::after{
                         content: "";
                         position: absolute;
-                        left: calc(-40% - 10px);
-                        bottom: -70px;
-                        width: calc(100% + 28%); height: 93%;
+                        left: -40%; bottom: -70px;
+                        width: 128%; height: 93%;
                         background-color: var(--Soft-Blue);
-                        border-top-right-radius: 200px;
-                        border-bottom-right-radius: 200px;
+                        border-radius: 0 200px 200px 0;
                         z-index: -1;
                     } 
                     
-                    img{ width: 100%; }
+                    img{ width: 100% }
                 }
 
                 .feature-text{
                     width: 400px;
-                    justify-self: end;
-
-                    h2{ font-size: 1.5em; }
-                    
-                    p{
-                        margin: 30px 0;
-                        font-size: .9em;
-                        line-height: 1.5;
-                    }
+                    h2{ font-size: 1.5em }
+                    p{ margin-block: 30px }
                 }
             }
         }
@@ -95,41 +83,34 @@
 
 /* Responsive: LapTop 1024px */
 @media screen and (width <= 1024px){
-    .features .detail{
+    /* Features Tab */
+    .features .features-tab{
         .slider{ width: 70% }
-
-        .feature-tab{ 
-            padding-inline: 8%;
-            .feature .illustration-feature{ transform: scale(.9); }
-        }
+        .feature-tab .feature .illustration-feature{ width: 48% }
     }
 }
 
 /* Responsive: Tablet 900px */
 @media screen and (width <= 900px){
-    .features .detail{
+    /* Features Tab */
+    .features .features-tab{
         .slider{ width: 80% }
 
         .feature-tab .feature{
-            grid-template-columns: 1fr;
-            gap: 120px;
-            justify-items: center;
+            flex-direction: column;
+            gap: 110px;
     
             .illustration-feature{
                 width: 72%;
-                transform: scale(1);
-    
                 &::after{
-                    left: -50%;
-                    bottom: -60px;
-                    width: calc(100% + 36%); height: 88%;
+                    left: -50%; bottom: -60px;
+                    width: 136%; height: 88%;
                 } 
             }
     
             .feature-text{
                 text-align: center;
                 justify-self: unset;
-
                 button{ width: 40% }
             }
         }
@@ -143,13 +124,13 @@
         padding-inline: 8%;
 
         .header_features{ width: 100% }
-
-        .detail{
+        
+        .features-tab{
             margin-top: 40px;
 
             .slider{
-                width: 100%;
                 flex-direction: column;
+                width: 100%;
                 .slide{ flex: none }
             }
 
@@ -161,7 +142,7 @@
 
                     .illustration-feature{ 
                         width: 100%;
-                        &::after{ bottom: -30px }
+                        &::after{ bottom: -40px }
                     }
 
                     .feature-text{
@@ -177,4 +158,4 @@
 }
 
 /* Responsive: Mobile 340px */
-@media screen and (width <= 340px){ .features{ margin-top: 100px } }
+@media screen and (width <= 340px){ .features{ margin-top: 110px } }

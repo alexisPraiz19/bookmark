@@ -3,9 +3,11 @@
     .header_hero h1, .header_features h1{ font-size: 1.9em }
 }
 
-
-/* Responsive: Tablet */
+/* Responsive: Tablet 900px */
 @media screen and (width <= 900px){.main{ margin-top: 0 }}
 
-/* Responsive: Mobile */
-@media screen and (width <= 500px){ .main{margin-top: 40px }}
+/* Responsive: Mobile 500px */
+@media screen and (width <= 500px){.main{ margin-top: 40px }}
+
+/* Responsive: Mobile 340px */
+@media screen and (width <= 340px){.main .header_hero h1, .main .header_features h1{ font-size: 1.6em }}
