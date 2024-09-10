@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/index.css">
+  <meta name="description" content="Página Web para poner en práctica estudios de programación web. Diseño del reto adquirido en 'Fontend Mentor'.">
+  <link rel="stylesheet" href="/css/index.css" media="all" aria-disabled="true">
   <title>Bookmark landing page</title>
-  
 </head>
 <body>
   <!-- Cabezera -->
@@ -19,9 +19,9 @@
         <img src="public/svg/icon-close.svg" class="icon-close" alt="icon-close" id="close-menu"> 
       </div>
 
-      <a href="#" class="r-radius r-text-color">Features</a>
-      <a href="#" class="r-radius r-text-color">Pricing</a>
-      <a href="#" class="r-radius r-text-color">Contact</a>
+      <a href="#" rel="noreferrer" role="button" aria-label="see features"  class="r-radius r-text-color">Features</a>
+      <a href="#" rel="noreferrer" role="button" aria-label="see pricing"  class="r-radius r-text-color">Pricing</a>
+      <a href="#" rel="noreferrer" role="button" aria-label="go contact"  class="r-radius r-text-color">Contact</a>
 
       <button type="button" class="r-button r-radius">Login</button>
 
@@ -72,14 +72,14 @@
       
       <!-- Features Tab -->
       <div class="features-tab">
-        <div class="slider r-d-flex r-text-color" role="navigation">
-          <span class="slide">Simple Bookmarking</span>
-          <span class="slide">Speedy Searching</span>
-          <span class="slide">Easy Sharing</span>
+        <div class="slider r-d-flex r-text-color" role="tablist" id="slider">
+          <span class="slide" role="tab" id="tab1" aria-selected="true">Simple Bookmarking</span>
+          <span class="slide" role="tab" id="tab2" aria-selected="false">Speedy Searching</span>
+          <span class="slide" role="tab" id="tab3" aria-selected="false">Easy Sharing</span>
         </div>
 
-        <div class="feature-tab padding-inline" role="tablist">
-          <article class="feature r-d-flex">
+        <div class="feature-tab padding-inline">
+          <article class="feature r-d-flex show-feature" aria-labelledby="tab1">
             <figure class="illustration-feature">
               <img src="public/svg/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
             </figure>
@@ -91,6 +91,42 @@
                 Organize your Bookmarks however you like. Our
                 simple drag-and-drop interface gives you complete
                 control over how you manage your favourite sites.
+              </p>
+
+              <button class="r-button">More Info</button>
+            </div>
+          </article>
+
+          <article class="feature r-d-flex" aria-labelledby="tab2" hidden>
+            <figure class="illustration-feature">
+              <img src="public/svg/illustration-features-tab-2.svg" alt="illustration-features-tab-2">
+            </figure>
+
+            <div class="feature-text">
+              <h2>Inteligent Search</h2>
+
+              <p class="r-text-color">
+                Our powerful search feature will help you find saved
+                sites in no time at all. No need to trawl through all of
+                your bookmarks.
+              </p>
+
+              <button class="r-button">More Info</button>
+            </div>
+          </article>
+
+          <article class="feature r-d-flex" aria-labelledby="tab3" hidden>
+            <figure class="illustration-feature">
+              <img src="public/svg/illustration-features-tab-3.svg" alt="illustration-features-tab-3">
+            </figure>
+
+            <div class="feature-text">
+              <h2>Share your Bookmarks</h2>
+
+              <p class="r-text-color">
+                Easily share your bookmarks and collections with
+                others. Create and shareable link that you can send at
+                the click of a button.
               </p>
 
               <button class="r-button">More Info</button>
@@ -220,17 +256,17 @@
 
      <!-- Contact -->
       <section class="contact r-d-grid">
-        <span>35.000+ already joined</span>
+        <span role="contentinfo">35.000+ already joined</span>
         <h1>Stay up-to-date with what <br>  we're doing</h1>
 
         <form class="container-send-email r-d-flex">
           <label for="email">
             <input type="email" name="email" id="email" placeholder="Enter your email address">
             <img src="public/svg/icon-error.svg" alt="icon-error">
-            <span>Whoops, make sure it's an email</span>
+            <span role="alert">Whoops, make sure it's an email</span>
           </label>
 
-          <button class="r-button">Contact us</button>
+          <button type="submit" class="r-button">Contact us</button>
         </form>
       </section>
   </main>
@@ -240,17 +276,17 @@
     <img src="public/svg/logo-bookmark-footer.svg" alt="logo-bookmark">
 
     <div class="r-d-flex">
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
+      <a href="#" rel="noreferrer" role="button" aria-label="see features"  class="r-radius r-text-color">Features</a>
+      <a href="#" rel="noreferrer" role="button" aria-label="see pricing"  class="r-radius r-text-color">Pricing</a>
+      <a href="#" rel="noreferrer" role="button" aria-label="go contact"  class="r-radius r-text-color">Contact</a>
     </div>
 
     <div class="r-d-flex">
-      <a href="#"><img src="public/svg/icon-facebook.svg" alt="icon-facebook"></a>
-      <a href="#"><img src="public/svg/icon-twitter.svg" alt="icon-twitter"></a>
+      <a href="#" rel="noreferrer" role="button" aria-label="go to our facebook"><img src="public/svg/icon-facebook.svg" alt="icon-facebook"></a>
+      <a href="#" rel="noreferrer" role="button" aria-label="go to our twitter"><img src="public/svg/icon-twitter.svg" alt="icon-twitter"></a>
     </div>
   </footer>
 
-  <script src="/js/open_close_menu_mobile.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 </html>

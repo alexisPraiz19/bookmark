@@ -34,15 +34,22 @@
                 &::after{
                     content: "";
                     position: absolute;
-                    left: 50%; bottom: -1px;
+                    inset: 48px 0 0 50%;
                     width: 0; height: 2px;
                     background-color: var(--Soft-Red);
                     transform: translateX(-50%);
                     transition: width .1s linear;
                 }
 
-                &:hover{ color: var(--Soft-Red) }
-                &:hover::after{ width: 100% }
+                &:hover{ 
+                    color: var(--Soft-Red);
+                    &::after{ width: 100% }
+                }
+            }
+
+            .active-slide{
+                color: var(--Soft-Red);
+                &::after{ width: 100% }
             }
         }
 
@@ -51,8 +58,11 @@
             margin-top: 60px;
 
             .feature{
+                position: fixed;
                 justify-content: space-between;
                 align-items: center;
+                opacity: 0;
+                transition: opacity .1s linear;
 
                 .illustration-feature{
                     position: relative;
@@ -61,8 +71,8 @@
                     &::after{
                         content: "";
                         position: absolute;
-                        left: -40%; bottom: -70px;
-                        width: 128%; height: 93%;
+                        inset: 70px 0 0 -40%;
+                        width: 123%; height: 93%;
                         background-color: var(--Soft-Blue);
                         border-radius: 0 200px 200px 0;
                         z-index: -1;
@@ -76,6 +86,11 @@
                     h2{ font-size: 1.5em }
                     p{ margin-block: 30px }
                 }
+            }
+
+            .show-feature{
+                position: static;
+                opacity: 1;
             }
         }
     }
@@ -125,6 +140,7 @@
 
         .header_features{ width: 100% }
         
+        /* Features Tab */
         .features-tab{
             margin-top: 40px;
 
