@@ -1,14 +1,14 @@
 /* Fuentes */
 @font-face {
     font-family: "Rubik";
-    src: url(/font/Rubik-Regular.ttf);
+    src: url(/public/font/Rubik-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Rubik";
-    src: url(/font/Rubik-Medium.ttf);
+    src: url(/public/font/Rubik-Medium.ttf);
     font-weight: 500;
     font-style: bold;
 }

@@ -4,7 +4,9 @@
   "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",

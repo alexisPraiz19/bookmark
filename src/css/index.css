@@ -1,0 +1,13 @@
+@import "./general.css";
+@import "./reusable_styles.css";
+
+/* Componentes */
+@import "./semantics/header.css";
+@import "./semantics/main.css";
+@import "./semantics/footer.css";
+
+@import "./sections/hero.css";
+@import "./sections/features.css";
+@import "./sections/download.css";
+@import "./sections/questions.css";
+@import "./sections/contact.css";

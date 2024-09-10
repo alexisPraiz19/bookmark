@@ -30,9 +30,9 @@
 
 .r-radius{ border-radius: 5px }
 
-.r-text-color{ 
+.r-text-color{
     font-size: .9em;
-    color: var(--Grayish-Blue); 
+    color: var(--Grayish-Blue);
     line-height: 1.4;
 }
 
