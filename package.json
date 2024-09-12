@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Alexis Leonel Praiz",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^5.4.4"
+  }
 }
