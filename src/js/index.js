@@ -1,4 +1,4 @@
-import "../css/index.css";
+
 
 /* Abrir - Cerrar Menú Mobile */
 const $menu       = document.querySelector(".nav");
