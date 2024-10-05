@@ -35,8 +35,5 @@ const $form = document.querySelector(".container-send-email");
 
 $form.addEventListener("submit", (e) =>{
     e.preventDefault();
-    if(e.target.children[0].children[0].value != ""){
-        alert("Simulación de 'envio' realizada");
-        e.defaultPrevented()
-    }
+    if(e.target.children[0].children[0].value != "") alert("Simulación de 'envio' realizada");
 });
