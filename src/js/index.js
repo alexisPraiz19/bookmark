@@ -1,5 +1,3 @@
-
-
 /* Abrir - Cerrar Menú Mobile */
 const $menu       = document.querySelector(".nav");
 const $close_menu = document.getElementById("close-menu");
