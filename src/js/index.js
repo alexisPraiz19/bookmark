@@ -35,5 +35,3 @@ $form.addEventListener("submit", (e) =>{
     e.preventDefault();
     if(e.target.children[0].children[0].value != "") alert("Simulación de 'envio' realizada");
 });
-
-import "../css/index.css";
